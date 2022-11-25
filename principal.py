@@ -22,3 +22,4 @@ arvore = DecisionTreeClassifier()
 
 
 
+
