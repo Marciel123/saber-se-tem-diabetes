@@ -21,3 +21,4 @@ from sklearn.tree import DecisionTreeClassifier
 arvore = DecisionTreeClassifier()
 
 
+
