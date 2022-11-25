@@ -14,8 +14,8 @@ classes = dados['Outcome']
 features.shape,classes.shape
 st.write(nomes_colunas)
 #dividir entre treino e teste
-from sklearn.model_selection import train_test_split
 
+from sklearn.model_selection import train_test_split
 features_treino,features_teste,classes_treino,classes_teste = train_test_split(features,classes,test_size=0.3,random_state=2)
 from sklearn.tree import DecisionTreeClassifier
 arvore = DecisionTreeClassifier()
