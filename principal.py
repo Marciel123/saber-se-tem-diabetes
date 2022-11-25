@@ -12,7 +12,7 @@ nomes_colunas = nomes_colunas[:tamanho-1]
 features = dados[nomes_colunas]
 classes = dados['Outcome']
 features.shape,classes.shape
-st.write(colunas)
+st.write(nomes_colunas)
 #dividir entre treino e teste
 from sklearn.model_selection import train_test_split
 
