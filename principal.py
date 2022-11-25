@@ -1,6 +1,9 @@
 import pandas as pd #manipulacao 
 
-dados=pd.read_csv('/content/drive/MyDrive/inteligencia artificial/trabalho final/diabetes.csv')
+
+###################importando os dados do csv ########################
+dados = pd.read_csv("diabetes.csv")
+
 
 #coleta os nomes das colunas
 nomes_colunas = dados.columns.to_list()
