@@ -39,22 +39,20 @@ print("resultado",resultado)
 #print(metrics.classification_report(classes_teste,resultado,target_names=['']))
 individuo = []
 diagnostico = ['Não diabético','Diabético']
-Pregnancies = int(input('Digite o número de gravidez do indivíduo'))
-individuo.append(Pregnancies)
-Glucose = int(input('Digite o número de glucose (0-199)'))
-individuo.append(Glucose)
-BloodPressure = int(input('Digite a pressão sanguínea (0-122)'))
-individuo.append(BloodPressure)
-SkinThickness = int(input('Digite a espessura da pele (0-99)'))
-individuo.append(SkinThickness)
-Insulin = int(input('Digite o valor da insulina (0-846)'))
-individuo.append(Insulin)
-BMI = float(input('Digite o IMC (0-67.1)'))
-individuo.append(BMI)
+f1 = st.number_input('Digite o número de gravidez do indivíduo')
+f2 = st.number_input('Digite o número de gravidez do indivíduo')
+f3 = st.number_input('Digite o número de glucose (0-199)')
+f4 = st.number_input('Digite a pressão sanguínea (0-122)')
+f5 = st.number_input('Digite a espessura da pele (0-99)')
+f6 = st.number_input('Digite o valor da insulina (0-846)')
+f7 = st.number_input('Digite o IMC (0-67.1)')
+f8 = st.number_input('Digite o pedigree de 0.07 a 2.2')
+f8 = st.number_input('Digite a idade (21-81)')
+
 #Diabetes Pedigree Function ou Função de linhagem de diabetes: indica a função que pontua a probabilidade de diabetes com base na história familiar
-DiabetesPedigreeFunction = float(input('Digite o pedigree de 0.07 a 2.2'))
+
 individuo.append(DiabetesPedigreeFunction)
-Age = int(input('Digite a idade (21-81)'))
+
 individuo.append(Age)
 
 resposta = arvore.predict([individuo])
