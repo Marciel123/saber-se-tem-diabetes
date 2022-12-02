@@ -67,3 +67,4 @@ resposta = arvore.predict([individuo])
 print(diagnostico[int(resposta)])
 
 
+
