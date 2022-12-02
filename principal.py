@@ -66,7 +66,7 @@ individuo.append(Age)
 resposta = arvore.predict([individuo])
 print(diagnostico[int(resposta)])
 
-if st.button(' diagnostico  '):
+if st.button('diagnostico'):
    resposta = arvore.predict([[Glucose,BloodPressure,SkinThickness,Insulin,DiabetesPedigreeFunction,Age]])#fara a predicao
   if resposta == 0:
     st.write('Diabetico!')
