@@ -36,7 +36,7 @@ resultado = arvore.predict(features_teste)
 #avalia a predição da arvore
 from sklearn import metrics
 
-print(metrics.classification_report(classes_teste,resultado,target_names=['']))
+#print(metrics.classification_report(classes_teste,resultado,target_names=['']))
 
 individuo = []
 diagnostico = ['Não diabético','Diabético']
