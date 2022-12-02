@@ -52,9 +52,9 @@ Insulin = st.number_input('Digite o valor da insulina (0-846)')
 individuo.append(Insulin)
 BMI = st.number_input('Digite o IMC (0-67.1)'))
 individuo.append(BMI)
-DiabetesPedigreeFunction = st.number_input('Digite o pedigree de 0.07 a 2.2'))
+DiabetesPedigreeFunction = st.number_input('Digite o pedigree de 0.07 a 2.2')
 individuo.append(DiabetesPedigreeFunction)
-Age = st.number_input('Digite a idade (21-81)'))
+Age = st.number_input('Digite a idade (21-81)')
 individuo.append(Age)
 
 
