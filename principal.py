@@ -29,7 +29,7 @@ print("resultado",resultado)
 
 #avalia a precição da arvore é esperada
 from sklearn import metrics
-print(metrics.classification_report(classes_teste,predicao,target_names=nomes_classes))
+#print(metrics.classification_report(classes_teste,predicao,target_names=nomes_classes))
 
 resultado = arvore.predict(features_teste)
 
