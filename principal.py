@@ -60,7 +60,7 @@ individuo.append(Age)
 
 #Diabetes Pedigree Function ou Função de linhagem de diabetes: indica a função que pontua a probabilidade de diabetes com base na história familiar
 
-individuo.append(DiabetesPedigreeFunction)
+#individuo.append(DiabetesPedigreeFunction)
 
 
 resposta = arvore.predict([individuo])
