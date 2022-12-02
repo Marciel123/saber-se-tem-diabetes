@@ -36,24 +36,32 @@ resultado = arvore.predict(features_teste)
 #avalia a predição da arvore
 from sklearn import metrics
 
-#print(metrics.classification_report(classes_teste,resultado,target_names=['']))
+print(metrics.classification_report(classes_teste,resultado,target_names=['']))
+
 individuo = []
 diagnostico = ['Não diabético','Diabético']
-f1 = st.number_input('Digite o número de gravidez do indivíduo')
-f2 = st.number_input('Digite o número de gravidez do indivíduo')
-f3 = st.number_input('Digite o número de glucose (0-199)')
-f4 = st.number_input('Digite a pressão sanguínea (0-122)')
-f5 = st.number_input('Digite a espessura da pele (0-99)')
-f6 = st.number_input('Digite o valor da insulina (0-846)')
-f7 = st.number_input('Digite o IMC (0-67.1)')
-f8 = st.number_input('Digite o pedigree de 0.07 a 2.2')
-f8 = st.number_input('Digite a idade (21-81)')
+Pregnancies  = st.number_input('Digite o número de gravidez do indivíduo')
+individuo.append(Pregnancies)
+Glucose =st.number_input('Digite o número de glucose (0-199)')
+individuo.append(Glucose)
+BloodPressure= st.number_input('Digite a pressão sanguínea (0-122)')
+individuo.append(BloodPressure)
+SkinThickness  = st.number_input('Digite a espessura da pele (0-99)')
+individuo.append(SkinThickness)
+Insulin = st.number_input('Digite o valor da insulina (0-846)')
+individuo.append(Insulin)
+BMI = st.number_input('Digite o IMC (0-67.1)'))
+individuo.append(BMI)
+DiabetesPedigreeFunction = st.number_input('Digite o pedigree de 0.07 a 2.2'))
+individuo.append(DiabetesPedigreeFunction)
+Age = st.number_input('Digite a idade (21-81)'))
+individuo.append(Age)
+
 
 #Diabetes Pedigree Function ou Função de linhagem de diabetes: indica a função que pontua a probabilidade de diabetes com base na história familiar
 
 individuo.append(DiabetesPedigreeFunction)
 
-individuo.append(Age)
 
 resposta = arvore.predict([individuo])
 print(diagnostico[int(resposta)])
