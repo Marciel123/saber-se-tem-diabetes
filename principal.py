@@ -28,13 +28,13 @@ resultado = arvore.predict(features_teste)
 print("resultado",resultado)
 
 #avalia a precição da arvore é esperada
-#from sklearn import metrics
-#print(metrics.classification_report(classes_teste,predicao,target_names=nomes_classes))
+from sklearn import metrics
+print(metrics.classification_report(classes_teste,predicao,target_names=nomes_classes))
 
-#resultado = arvore.predict(features_teste)
+resultado = arvore.predict(features_teste)
 
 #avalia a predição da arvore
-#from sklearn import metrics
+from sklearn import metrics
 
 #print(metrics.classification_report(classes_teste,resultado,target_names=['']))
 individuo = []
